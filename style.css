@@ -1,0 +1,259 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+body {
+  font-family: sans-serif;
+  background-color: #f0f0f0;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  display: inline-block;
+  padding: 10px 20px;
+  text-decoration: none;
+  color: white;
+  border: 2px solid #fff;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+a:hover {
+  background-color: #fff;
+  color: #007aff;
+}
+
+h1 {
+  text-align: center;
+  margin-top:10px;
+  font-size: 3rem;
+  color: #007bff;
+  font-family: 'Bebas Neue', sans-serif;
+  position: relative;
+  animation: bounce 1s ease-in-out;
+}
+
+h2{
+  text-align: center;
+  /* margin-bottom: 20px; */
+  font-size: 3rem;
+  color: #007bff;
+  font-family: 'Bebas Neue', sans-serif;
+  position: relative;
+  animation: bounce 1s ease-in-out;
+}
+
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+      transform: translateY(0);
+  }
+  40% {
+      transform: translateY(-80px);
+  }
+  60% {
+      transform: translateY(-50px);
+  }
+}
+
+
+/* Tambahkan gaya CSS untuk ukuran tampilan output yang lebih kecil */
+/* ... */
+#formatSelect {
+    padding: 8px;
+    font-size: 16px;
+    border-radius: 5px;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    cursor: pointer;
+    background-color: #fff;
+    border: 1px solid #007bff;
+    color: #007bff;
+    transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+}
+
+#formatSelect:hover {
+    background-color: #007bff;
+    color: #fff;
+}
+
+#formatSelect:focus {
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+/* Animasi untuk tampilan yang dipilih */
+#formatSelect option {
+    transition: background-color 0.3s, color 0.3s;
+}
+
+#formatSelect option:hover {
+    background-color: #007bff;
+    color: #fff;
+}
+
+.output {
+  text-align: center;
+  margin-top: 20px;
+}
+
+canvas {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  /* Untuk mengatur tampilan output ke tengah */
+}
+
+/* ... */
+
+
+.horizontal {
+  transform: scaleX(-1);
+}
+
+.vertical {
+  transform: scaleY(-1);
+}
+
+.container {
+  width: 500px;
+  margin: 0 auto;
+}
+
+.input-form {
+  width: 90%;
+  margin-top: 20px;
+  border-radius: 15px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  padding: 20px;
+  transition: all 0.5s ease-in-out;
+  position: relative;
+
+}
+
+
+.btn-secondary {
+  margin-top: 17px;
+}
+
+input-form input[type="file"] {
+  display: none;
+}
+
+/* Tambahkan gaya CSS yang sudah ada */
+.btn-danger {
+  margin-top: 17px;
+  /* Atur jarak ke atas sesuai kebutuhan */
+}
+
+label {
+  margin-bottom: 15px;
+  display: block;
+  /* Menambahkan jarak ke bawah */
+}
+
+.output img {
+  max-width: 50%;
+  height: auto;
+}
+
+.horizontal {
+  transform: scaleX(-1);
+}
+
+.vertical {
+  transform: scaleY(-1);
+}
+
+
+.input-form .custom-file-input {
+  width: 100%;
+  padding: 10px 5px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 50%;
+  cursor: pointer;
+
+  &:hover {
+    background-color: #eeeeee;
+  }
+}
+
+.input-form .custom-file-input::before {
+  content: "\f007";
+  font-family: FontAwesome;
+  font-size: 1.5em;
+  color: #007bff;
+  margin-right: 2rem;
+}
+
+.output {
+  width: 100%;
+  margin-top: 50px;
+}
+
+img {
+  width: 100%;
+}
+
+.btn-group {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 20px;
+
+}
+
+.btn {
+  margin-bottom: 25px;
+}
+
+/* .btn-success{
+  margin-right: 20px;
+  padding: 10px 20px;
+  background-color: #e1170499;
+  color: white;
+  border: none;
+  border-radius: 15px;
+  cursor: pointer;
+
+  &:hover {
+    box-shadow: 0 0 10px 0 #dcb7a7;
+  }
+} */
+btn-secondary {
+  margin-top: 16px;
+}
+
+.btn {
+  margin-right: 20px;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 9px;
+  cursor: pointer;
+
+  &:hover {
+    box-shadow: 0 0 10px 0 #0069d9;
+  }
+}
+@media (max-width: 600px) {
+  .container {
+      width: 100%;
+  }
+  .btn-group {
+    text-align: center;
+}
+#formatSelect {
+  width: 100%; /* Mengatur lebar 100% pada layar kecil */
+  margin-bottom: 10px; /* Menambahkan margin bawah untuk memberikan ruang */
+}
+
+.btn {
+    margin-right: 0; /* Menghapus margin kanan pada tombol pada layar kecil */
+}
+  .input-form {
+      width: 100%;
+  }
+}
